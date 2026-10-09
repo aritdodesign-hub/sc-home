@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC Home | Roofing, Windows &amp; Siding in Little Rock, AR | (501) 374-4663</title>
+  <meta name="description" content="SC Home, Little Rock, Arkansas: full-service roofing company, also specializing in windows and siding. Free roof inspections, no money down on new contracts, and we handle your insurance claim for you. Call (501) 374-HOME.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Noto+Serif:wght@700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lets CSS hide scroll-reveal content only when JS is running to reveal it again -->
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          // "Traditional & established" font row (PROMPT-LIBRARY §2a, the layout default): in business since 2008, an
+          // owner-led company, and their logo sets "SC HOME" in a classic serif
+          fontFamily: {
+            sans: ['"Noto Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Noto Serif"', 'Georgia', 'serif'],
+            headline: ['Oswald', 'system-ui', 'sans-serif']
+          },
+          // SC Home: palette from their logo (old website PNG): deep maroon roofs #8e2222 shading to #5a0505, "SC" in the
+          // same red, "HOME" in black. 500 = the maroon lifted for dark backgrounds; 600 = the logo maroon (white button
+          // text passes contrast); 700 = its shadow tone; 900/950 = near-black warmed toward the maroon for the dark
+          // sections and footer. (Little Rock metro: Little Rock Roofing Services is blue, New Heights is pure red on
+          // neutral charcoal.)
+          colors: {
+            brand: { 500: '#dd4b4e', 600: '#a32326', 700: '#801a1d', 900: '#2c1617', 950: '#180b0c' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body id="top" class="bg-white font-sans text-slate-800 antialiased">
+
+  <!-- NAV: top strip + white bar (logo | tagline | links | phone) -->
+  <div class="bg-brand-900 h-2.5"></div>
+
+  <header id="site-header" class="sticky top-0 z-40 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3 xl:gap-6">
+
+      <!-- Logo + divider + tagline -->
+      <a href="#top" class="header-brand flex items-center gap-3 max-[319px]:gap-2 xl:gap-4 shrink-0">
+        <!-- {{LOGO}}: their real logo (old website, SC-Home-png.png, 400x257 transparent PNG via the Wayback Machine). Only
+             the house roofs are used as the mark (396x115 crop); the "SC HOME / Roofing · Windows · Siding" lettering is too
+             small to read at header size, so the name is set in type below it. Ask Sam for the vector logo before launch.
+             Client tweak: the mark is wide (about 3.4:1), so it hides under 400px and from 1024px to 1365px, where beside
+             the full desktop nav the header would overflow (same fix as New Heights / Little Rock Roofing Services). -->
+        <img src="images/logo-mark.png" alt="" class="h-8 w-auto xl:h-10 max-[399px]:hidden lg:max-[1365px]:hidden shrink-0" width="396" height="115">
+        <span class="leading-none">
+          <span class="block font-display font-extrabold text-[22px] max-[299px]:text-[18px] xl:text-[24px] tracking-tight text-slate-800 whitespace-nowrap"><span class="text-brand-600">SC</span> Home</span>
+          <span class="block text-[9px] tracking-[0.18em] uppercase text-slate-500 mt-1">Roofing &middot; Windows &middot; Siding</span>
+        </span>
+      </a>
+
+      <!-- Desktop links -->
+      <nav class="hidden lg:flex items-center gap-3 xl:gap-7 whitespace-nowrap text-[14px] xl:text-[15px] font-medium text-slate-700" aria-label="Main">
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-6 hover:text-brand-600 focus:outline-none">
+            Services
+            <svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 5 5 5-5"/></svg>
+          </button>
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-b-lg shadow-lg py-2">
+            <a href="#services" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Roof Replacement</a>
+            <a href="#services" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Siding</a>
+            <a href="#services" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Windows</a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-6 hover:text-brand-600 focus:outline-none">
+            About Us
+            <svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 5 5 5-5"/></svg>
+          </button>
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-b-lg shadow-lg py-2">
+            <a href="#about" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">About Us</a>
+            <a href="#reviews" class="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-brand-600">Reviews</a>
+          </div>
+        </div>
+
+        <a href="#projects" class="py-6 hover:text-brand-600">Projects</a>
+
+        <a href="#areas" class="py-6 hover:text-brand-600">Service Area</a>
+        <a href="#contact" class="py-6 hover:text-brand-600">Contact</a>
+      </nav>
+
+      <!-- Phone block -->
+      <a href="tel:5013744663" class="hidden md:block text-right shrink-0">
+        <span class="hidden xl:block text-[10px] font-bold tracking-[0.16em] uppercase text-slate-500">Call 501-374-HOME</span>
+        <span class="flex items-center justify-end gap-2 text-brand-600 font-extrabold text-lg xl:text-[26px] leading-tight">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          (501) 374-4663
+        </span>
+      </a>
+
+      <!-- Free estimate CTA -->
+      <a href="#contact" class="hidden lg:inline-flex shrink-0 items-center whitespace-nowrap bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm uppercase tracking-wide px-4 xl:px-5 py-3 rounded-md shadow-sm transition-colors">
+        Free Estimate
+      </a>
+
+      <!-- Mobile toggle -->
+      <button id="menu-btn" class="menu-btn lg:hidden p-2 -mr-2 text-slate-700" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="bar bar-1" d="M4 7h16"/><path class="bar bar-2" d="M4 12h16"/><path class="bar bar-3" d="M4 17h16"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div id="mobile-menu" class="lg:hidden border-t border-slate-200 bg-white">
+      <div class="mobile-menu-inner px-4 py-3 flex flex-col text-[15px] font-medium text-slate-700 divide-y divide-slate-100">
+        <a href="#services" class="py-3">Services</a>
+        <a href="#about" class="py-3">About Us</a>
+        <a href="#projects" class="py-3">Projects</a>
+        <a href="#areas" class="py-3">Service Area</a>
+        <a href="#contact" class="py-3">Contact</a>
+        <a href="tel:5013744663" class="py-4 text-brand-600 font-extrabold text-xl">(501) 374-4663</a>
+        <a href="#contact" class="my-3 text-center bg-brand-600 text-white font-bold uppercase tracking-wide py-3 rounded-md">Free Estimate</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO: full-width photo under the nav, centered tagline, slide dots -->
+  <section class="cut-hero relative isolate min-h-[70vh] lg:min-h-[78vh] flex items-center overflow-hidden bg-brand-900">
+    <!-- {{HERO_IMAGE}}: STOCK (Unsplash, 2400px): a roofer in a harness working on a shingle roof. Their own photos are
+         phone shots of printed before/after prints (720-1440px, glare), too small and soft for a full-width hero. Ask Sam
+         for a large, recent job photo before launch. -->
+    <img src="images/hero.jpg" alt="Roofer in a safety harness working on a shingle roof above a home's gutter line" class="hero-img absolute inset-0 -z-10 w-full h-full object-cover object-[60%_45%]">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-brand-950/80 via-brand-950/55 to-brand-950/20"></div>
+    <!-- Client tweak: under 640px the hero copy spans the full width and sits on top of the photo; a light even tint keeps it
+         readable on phones only (same as Roofing World). Backport candidate for the template. -->
+    <div class="absolute inset-0 -z-10 bg-brand-950/40 sm:hidden"></div>
+
+    <!-- Left-aligned copy block: eyebrow, big condensed headline, paragraph -->
+    <!-- Client tweak: pb-32 under 640px so the slide dots (bottom-24) never sit on the paragraph on short phones; backport candidate for the template -->
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 sm:py-24">
+      <div class="max-w-xl hero-in">
+        <p class="text-brand-500 font-bold uppercase tracking-[0.12em] text-xs sm:text-sm">Little Rock, AR &middot; <span class="whitespace-nowrap">Since 2008</span></p>
+        <!-- Their own line (Instagram bio): "SC stands for Satisfied Customer." The paragraph's offers are their own too
+             (Instagram posts, May 2020): free roof inspection, "NO MONEY DOWN" on all new contracts, "We handle your insurance
+             claims for you!" -->
+        <h1 class="font-headline font-bold uppercase text-white text-5xl max-[359px]:text-[42px] max-[319px]:text-[36px] sm:text-6xl lg:text-7xl leading-[0.95] mt-3">
+          SC Stands for Satisfied Customer.
+        </h1>
+        <p class="text-white/90 text-base sm:text-lg leading-relaxed mt-6 max-w-lg">
+          A full-service roofing company, also specializing in windows and siding. Free roof inspections, no money down on new contracts, and we handle your insurance claim for you. <strong class="font-bold text-white">Call <span class="whitespace-nowrap">501-374-HOME.</span></strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Slide dots (static for now; wire up when more than one hero image exists) -->
+    <div class="absolute bottom-24 sm:bottom-20 left-1/2 -translate-x-1/2 flex gap-2" aria-hidden="true">
+      <span class="w-3.5 h-3.5 rounded-full bg-white"></span>
+      <span class="w-3.5 h-3.5 rounded-full border-2 border-white/80"></span>
+    </div>
+  </section>
+
+  <!-- STATS CARD: overlaps the bottom edge of the hero. Only list stats the client can back up (4 provable stats, so 4 tiles and lg:grid-cols-4). -->
+  <section class="relative z-10 -mt-14 sm:-mt-16 px-4 sm:px-6 lg:px-8 pb-8">
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-xl ring-1 ring-slate-200/70 p-3 sm:p-4 reveal">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- calendar: Arkansas Business (2012 Business of the Year honorees) says Sam Carrasquillo launched SC Roofing &
+               Exteriors in 2008. CONFIRM with Sam. -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">2008</p>
+          <p class="text-[13px] text-slate-600 mt-2">Serving Arkansas Since</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- tag: "Here at SC Home we offer a No Money Down guarantee on all new contracts!!" (Instagram, May 2020) -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8 8-9 9-8-8Z"/><circle cx="8.5" cy="8.5" r="1.5"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">$0</p>
+          <p class="text-[13px] text-slate-600 mt-2">Down on New Contracts</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- house: "Give us a call for your Free Roof Inspection" (Instagram, May 2020) -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="m9.5 14.5 2 2 3.5-4"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">Free</p>
+          <p class="text-[13px] text-slate-600 mt-2">Roof Inspections</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-lg px-3 py-5 text-center stat-tile">
+          <!-- shield: "All of our work comes with a 100% customer satisfaction guarantee. If you're not happy with the work we've
+               done, we'll fix it until it's right!" (their old website, About Us). CONFIRM it still stands. -->
+          <svg class="w-6 h-6 mx-auto text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.3 2.3 4.2-4.6"/></svg>
+          <p class="font-headline font-bold text-4xl max-[319px]:text-[26px] sm:text-[40px] leading-none text-slate-800 mt-3">100%</p>
+          <p class="text-[13px] text-slate-600 mt-2">Satisfaction Guarantee</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BRANDS: logos scroll right to left, edges blurred. Only list brands the client is actually certified with / carries. -->
+  <section class="pb-14 reveal-fade" aria-label="What we offer">
+    <div class="relative max-w-6xl mx-auto overflow-hidden">
+      <div class="marquee-track flex w-max items-center">
+        <!-- Set 1 -->
+        <!-- No manufacturer certifications found. The first three are the makers on their old website's "Products From These
+             Quality Manufacturers" strip (2014: CertainTeed, Landmark, Alside, Central States Manufacturing). Products they
+             installed, NOT certifications; CONFIRM they still use them. Plus their own offers from Instagram. -->
+        <ul class="flex shrink-0 items-center gap-16 pr-16">
+          <li class="brand-logo">CertainTeed Landmark</li>
+          <li class="brand-logo">Alside</li>
+          <li class="brand-logo">Central States</li>
+          <li class="brand-logo">Free Roof Inspections</li>
+          <li class="brand-logo">No Money Down</li>
+          <li class="brand-logo">Insurance Claims</li>
+        </ul>
+        <!-- Set 2: exact duplicate for a seamless loop -->
+        <ul class="flex shrink-0 items-center gap-16 pr-16" aria-hidden="true">
+          <li class="brand-logo">CertainTeed Landmark</li>
+          <li class="brand-logo">Alside</li>
+          <li class="brand-logo">Central States</li>
+          <li class="brand-logo">Free Roof Inspections</li>
+          <li class="brand-logo">No Money Down</li>
+          <li class="brand-logo">Insurance Claims</li>
+        </ul>
+      </div>
+
+      <!-- Blurred + faded side edges -->
+      <div class="marquee-edge left-0 bg-gradient-to-r from-white to-transparent" style="-webkit-mask-image:linear-gradient(to right,#000 30%,transparent);mask-image:linear-gradient(to right,#000 30%,transparent)"></div>
+      <div class="marquee-edge right-0 bg-gradient-to-l from-white to-transparent" style="-webkit-mask-image:linear-gradient(to left,#000 30%,transparent);mask-image:linear-gradient(to left,#000 30%,transparent)"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES: copy on the left, round photo collage on the right (4 quarter-circle segments,
+       floating badge + founding-year card). STOCK (Unsplash) homes, siding, windows and roofers, except circle-2, a crop of their own carport siding job (Instagram).
+       Their own photos are reserved for the Projects section. -->
+  <section id="services" class="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-br from-rose-50 via-white to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[auto_1fr_16rem]">
+
+      <!-- Left: copy -->
+      <div class="col-span-full lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:max-w-md xl:max-w-xl mb-8 lg:mb-0 lg:pb-3 reveal">
+        <p class="text-brand-600 font-bold uppercase tracking-[0.14em] text-xs sm:text-sm">What We Do</p>
+        <h2 class="font-headline font-bold uppercase text-slate-800 text-4xl sm:text-5xl leading-[1.02] mt-3">Roofing, Windows &amp; Siding</h2>
+        <!-- From their Instagram bio ("Full service roofing company, also specializing in windows and siding"), their logo
+             ("Roofing · Windows · Siding") and posts (free roof inspection, insurance claims handled, "New Roof, New Siding,
+             and New Windows! Ask us about our bundle discounts!"). Gutters (half-off gutter cleaning special, March 2020) and
+             bathroom remodeling (old website, 2019) are mentioned only in passing: CONFIRM before adding them. -->
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mt-5 max-w-lg">SC Home is a full-service roofing company in Little Rock that also specializes in windows and siding. We replace and repair roofs, inspect them for free and handle your insurance claim for you. Need a new roof, new siding and new windows? Ask about our bundle discounts, with no money down on new&nbsp;contracts.</p>
+
+      </div>
+
+      <!-- Right: round collage -->
+      <div id="svc-circle" class="relative z-10 mx-auto lg:mx-0 mb-10 lg:mb-5 lg:-mt-16 w-full max-w-[460px] aspect-square col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:justify-self-end reveal-fade">
+
+        <!-- The circle: 2x2 grid clipped round; the grid gap makes the white cross -->
+        <div class="absolute inset-0 rounded-full overflow-hidden grid grid-cols-2 grid-rows-2 gap-1.5 bg-white shadow-xl ring-1 ring-slate-200/60">
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-1.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+          <!-- All 4 quarters are photos. Never use a solid/patterned brand-colour quarter here (client rule, 2026-09-26). -->
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-3.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+          <div class="circle-seg relative overflow-hidden bg-slate-200"><img src="images/circle-4.jpg" alt="" class="absolute inset-0 w-full h-full object-cover"><img src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0"></div>
+        </div>
+
+        <!-- Floating round photo, top-left -->
+        <img src="images/circle-float.jpg" alt="" loading="lazy" class="absolute -top-2 left-[6%] w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover ring-4 ring-white shadow-lg">
+        <!-- Floating round badge, bottom-right -->
+        <span class="absolute bottom-[8%] -right-1 sm:right-0 grid place-items-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-500 text-white ring-4 ring-white shadow-lg" aria-hidden="true">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.500 6v5.500c0 4.600 3.100 8.200 7.500 9.500 4.400-1.300 7.500-4.900 7.500-9.500V6L12 3Z"/><path d="m8.800 12 2.300 2.300 4.200-4.600"/></svg>
+        </span>
+
+        <!-- Floating card, left edge: no Google reviews yet, so it shows their founding year (Arkansas Business, 2012)
+             instead of a rating (as Double Deese / Huntsville Slate & Copper). CONFIRM. -->
+        <div class="absolute left-0 sm:-left-10 top-[58%] bg-white rounded-lg shadow-xl ring-1 ring-slate-200/70 px-4 py-3">
+          <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Serving Since</p>
+          <div class="flex items-center gap-2 mt-0.5">
+            <span class="font-headline font-bold text-2xl leading-none text-slate-800">2008</span>
+            <span class="text-xs font-semibold text-slate-500">Little Rock, AR</span>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICE TILES: 6 photo tiles. On desktop tiles 1-2 rise to fill the space beside/under the text and circle
+           (grid rows adapt to the paragraph length); tiles 2 and 3 have a curved edge that follows the circle.
+           Photos: all STOCK (Unsplash), one per service; swap in their own job photos when Sam sends larger ones. -->
+
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-1 lg:row-start-2 lg:row-span-2 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-roof-replacement.jpg" alt="Roofer carrying a bundle of new shingles past stacked bundles on a roof" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_40%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Roof Replacement</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-2 lg:row-start-2 lg:row-span-2 cut-svc overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-roof-repair.jpg" alt="Roofer in a harness sealing a spot on a shingle roof" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_50%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Roof Repair</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-3 lg:row-start-2 lg:row-span-2 cut-svc overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-free-inspections.jpg" alt="Two roofers inspecting a low-slope roof beside a chimney" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_45%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Free Roof Inspections</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-1 lg:row-start-4 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-insurance-claims.jpg" alt="Roofer tearing old shingles off a damaged roof down to the decking" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_45%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Insurance Claims</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-2 lg:row-start-4 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-siding.jpg" alt="Two-story home with green lap siding and a new back deck" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[60%_35%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Siding</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#contact" class="svc-tile group relative block min-h-56 sm:min-h-64 lg:col-start-3 lg:row-start-4 overflow-hidden rounded-md bg-brand-900 reveal-fade">
+        <img src="images/tile-windows.jpg" alt="New white double window looking out on autumn trees" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-[50%_50%] transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/35 to-brand-950/10"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
+          <h3 class="font-headline font-medium uppercase text-white text-2xl sm:text-[28px] leading-[1.05]">Windows</h3>
+          <svg class="w-6 h-6 shrink-0 text-brand-500 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ABOUT US: big quote + statement + who said it on the left, wide team photo on the right.
+       Use a real quote from the owner/manager. -->
+  <section id="about" class="relative py-16 sm:py-24 bg-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14 items-center">
+
+      <!-- Left: quote -->
+      <div class="reveal">
+        <!-- Opening quote mark -->
+        <svg class="w-14 h-14 sm:w-16 sm:h-16 text-brand-600 rotate-180" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.570-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4V3h9.983Zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983V3H24Z"/></svg>
+
+        <!-- The owner's own words, from "A MESSAGE FROM THE OWNER" on their old website (2019), signed "-SAM CARRASQUILLO".
+             Full quote: "We love providing exceptional home improvement services to homeowners throughout the state. Whether
+             you need roofing, windows, siding, or you want a stunning bathroom makeover, you can count on us." Shortened to
+             the second sentence without the bathroom clause (bathrooms are unconfirmed today). -->
+        <h2 class="font-headline font-medium uppercase text-slate-700 text-4xl sm:text-5xl leading-[1.05] mt-8">Whether you need roofing, windows or siding, you can count on&nbsp;us.</h2>
+
+        <!-- Who said it -->
+        <div class="flex items-center gap-4 mt-10">
+          <!-- Closing quote mark -->
+          <svg class="w-11 h-11 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.983 3v7.391c0 5.704-3.731 9.570-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4V3h9.983Zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983V3H24Z"/></svg>
+          <div>
+            <p class="font-bold text-lg text-slate-800 leading-tight">Sam Carrasquillo</p>
+            <p class="text-sm text-slate-600">Owner, SC Home</p>
+          </div>
+        </div>
+
+        <hr class="mt-8 border-slate-300">
+
+        <div class="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <a href="#projects" class="btn-arrow inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-headline font-medium uppercase tracking-wide text-base px-6 py-3 rounded-sm transition-colors">
+            About Us
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </a>
+          <a href="tel:5013744663" class="inline-flex items-center gap-2 font-headline font-medium uppercase tracking-wide text-base text-slate-800 hover:text-brand-600 transition-colors">
+            (501) 374-4663
+            <svg class="w-4 h-4 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: STOCK crew photo (Unsplash). Their old website had a team photo (myschome-team.jpg, 2014) but the Wayback
+           Machine never saved the file. Ask Sam for a real crew/team photo. -->
+      <div class="drop-shadow-xl photo-hover reveal" style="--reveal-delay:120ms"><img src="images/about-crew.jpg" alt="Two roofers in safety harnesses laying shingles side by side" loading="lazy" class="cut-tl w-full aspect-[4/3] lg:aspect-[16/11] object-cover object-[50%_45%]"></div>
+
+
+    </div>
+    <!-- Roof peak: the next section's white rises into this one -->
+    <div class="roof-peak" aria-hidden="true"></div>
+  </section>
+
+  <!-- OUR PROJECTS: alternating rows (text + bullets beside a photo).
+       3 REAL jobs from their own Instagram before/after posts (2020). Each photo is a phone shot of a printed "after" print in
+       a photo-album sleeve, cropped to the print, so they are small (616-1134px) and a little soft. No job locations were
+       posted, so the eyebrow is the posting date. Each write-up only describes what the before/after prints show plus the
+       caption. Ask Sam for the original files and the towns. -->
+  <section id="projects" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-brand-600 font-bold uppercase tracking-[0.14em] text-xs sm:text-sm">Before &amp; After</p>
+        <h2 class="font-headline font-bold uppercase text-slate-800 text-4xl sm:text-5xl leading-[1.02] mt-3">Homes We&rsquo;ve Made Over</h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mt-5">New roofs, new siding and new windows, often all on the same house. A few of the before-and-afters from our own photo&nbsp;album.</p>
+      </div>
+
+      <!-- Alternating rows: text left / image right, then image left / text right, and so on.
+           To add a project, copy a row; odd rows have the text first (image on the right), even rows have the image first. -->
+      <div class="mt-12 sm:mt-14 space-y-10 sm:space-y-12">
+
+        <!-- Project 1: text left, image right. Instagram, 16 Jan 2020: "#ThrowbackThursday Before and After. New Roof, New Siding,
+             and New Windows! Ask us about our bundle discounts! And we mean HUGE savings." Before print: white ranch, worn roof,
+             old siding. After print (used): grey vinyl siding, dark shutters, new roof. -->
+        <article class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14 items-center reveal">
+          <div>
+            <p class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-600">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+              Roof &middot; Siding &middot; Windows
+            </p>
+            <h3 class="font-headline font-semibold text-3xl sm:text-4xl leading-tight text-slate-800 mt-3">A Ranch Home, Top to&nbsp;Bottom</h3>
+            <p class="text-slate-600 text-base leading-relaxed mt-4">This white ranch house had a tired roof and worn-out siding. We gave it all three: a new roof, new grey vinyl siding with dark shutters, and new windows, done as one job. Bundling the work is where our biggest savings&nbsp;are.</p>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New roof over the whole house</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New vinyl siding and shutters</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New windows, with a bundle discount</li>
+            </ul>
+          </div>
+          <div class="drop-shadow-xl photo-hover"><img src="images/project-ranch-roof-siding.jpg" alt="Ranch house after its makeover, with grey vinyl siding, dark shutters and a new roof" loading="lazy" class="cut-tl w-full aspect-[4/3] lg:aspect-[7/5] object-cover object-[50%_55%]"></div>
+        </article>
+
+        <!-- Project 2: image left, text right. Instagram, 27 Feb 2020: "#throwbackthursday Beautiful updated windows and siding!
+             How can we help make your home an SC HOME?" Before print: three dark old windows in stained, rotting panel siding
+             with moss on the skirting. After print (used): a new bay window with white trim, tan vinyl siding, new soffit. -->
+        <article class="grid gap-8 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-14 items-center reveal">
+          <div class="drop-shadow-xl photo-hover"><img src="images/project-bay-window-siding.jpg" alt="New bay window with white trim set in fresh tan vinyl siding" loading="lazy" class="cut-tr w-full aspect-[4/3] lg:aspect-[7/5] object-cover object-[50%_50%]"></div>
+          <div>
+            <p class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-600">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+              Windows &middot; Siding
+            </p>
+            <h3 class="font-headline font-semibold text-3xl sm:text-4xl leading-tight text-slate-800 mt-3">From Rotting Panels to a Bay&nbsp;Window</h3>
+            <p class="text-slate-600 text-base leading-relaxed mt-4">Before: three dark, dated windows set in stained panel siding, with moss creeping up the bottom. After: a bright new bay window with white trim, wrapped in clean tan vinyl siding and a new soffit&nbsp;overhead.</p>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Old windows out, new bay window in</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Rotting panels replaced with vinyl siding</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New soffit and white trim</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 3: text left, image right. Instagram, 29 May 2020: "Garage View! Check out the rest of the home next week!
+             #beforeandafter" Before print: cream siding, faded red roof, open carport. After print (used): new tan vinyl siding
+             on the carport gable with a round gable vent, new window. -->
+        <article class="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14 items-center reveal">
+          <div>
+            <p class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-600">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+              Siding &middot; Carport
+            </p>
+            <h3 class="font-headline font-semibold text-3xl sm:text-4xl leading-tight text-slate-800 mt-3">A Fresh Face over the&nbsp;Carport</h3>
+            <p class="text-slate-600 text-base leading-relaxed mt-4">The carport side of this home was the first thing you saw from the driveway, and it showed its age. We wrapped the gable in new tan vinyl siding with a crisp vent, fitted a new window and finished the trim, so the garage view finally matches the rest of the&nbsp;house.</p>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-700">
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New vinyl siding on the gable</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>New window and trim</li>
+              <li class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5 shrink-0 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>Gable vent set in clean and level</li>
+            </ul>
+          </div>
+          <div class="drop-shadow-xl photo-hover"><img src="images/project-garage-siding.jpg" alt="Carport side of a home with new tan vinyl siding on the gable and a new window" loading="lazy" class="cut-tl w-full aspect-[4/3] lg:aspect-[7/5] object-cover object-[50%_45%]"></div>
+        </article>
+
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="#contact" class="inline-flex items-center border-2 border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white font-bold text-sm uppercase tracking-wide px-7 py-3 rounded-md transition-colors">Ask About Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS: heading + horizontally scrolling review cards that hang over a dark band at the bottom.
+       Use real reviews only (copy each <article>). Cards keep their natural height, so short and long reviews both work.
+       Google: NO reviews yet (listing "SC Home", 915 E 9th St, shows only "Write a review"). Cards 1-3 are customer reviews
+       SC Home posted as graphics on Instagram (May 2020), word for word, with no names given. Cards 4-5 are named customer
+       reviews from their old website (2014, "What Customers Are Saying"), word for word. Permission/names not yet asked. -->
+  <section id="reviews" class="relative bg-slate-100 pt-16 sm:pt-20 pb-24 border-t border-slate-200">
+    <!-- Dark band the cards overlap (the footer picks up from here) -->
+    <div class="absolute inset-x-0 bottom-0 h-48 bg-brand-900" aria-hidden="true"></div>
+
+    <div class="relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end justify-between gap-6 reveal">
+        <h2 class="font-headline font-medium uppercase text-slate-800 text-3xl sm:text-4xl lg:text-[2.6rem] leading-[1.1] max-w-3xl">What Our Satisfied Customers <span class="min-[320px]:whitespace-nowrap">Say</span></h2>
+        <!-- Arrows -->
+        <div class="hidden sm:flex shrink-0 gap-2">
+          <button type="button" id="reviews-prev" class="grid place-items-center w-11 h-11 rounded-full bg-white text-slate-700 ring-1 ring-slate-300 hover:bg-brand-600 hover:text-white hover:ring-brand-600 transition-colors" aria-label="Previous reviews">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+          </button>
+          <button type="button" id="reviews-next" class="grid place-items-center w-11 h-11 rounded-full bg-white text-slate-700 ring-1 ring-slate-300 hover:bg-brand-600 hover:text-white hover:ring-brand-600 transition-colors" aria-label="Next reviews">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Track: starts aligned with the page container and runs off the right edge -->
+      <div id="reviews-track" class="reviews-track mt-10 flex items-start gap-5 overflow-x-auto snap-x snap-mandatory pb-2 reveal-fade" style="--reveal-delay:100ms">
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-slate-700 text-[15px] leading-relaxed">&ldquo;SC Home is a company that takes pride in their work and they are willing to do what is necessary to ensure that you are happy. SC Home arrived on the agreed upon date. Their work crew was professional and courteous. They did a very good job of cleaning up after themselves and I haven&rsquo;t found a single roofing nail in my yard.&rdquo;</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Roofing Customer</p>
+              <p class="text-sm text-slate-500">Shared on our Instagram</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-slate-700 text-[15px] leading-relaxed">&ldquo;Friendly, accommodating, customer focused. When trying to quickly install a new roof before our baby was born, SC homes was flexible and pulled some strings to get us on the calendar in no time. When she arrived early, they were understanding that plans needed to change again even after the fire drill to get us on the schedule. Because of these things and more, I definitely recommend working with SC Homes.&rdquo;</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">New Roof Customer</p>
+              <p class="text-sm text-slate-500">Shared on our Instagram</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-slate-700 text-[15px] leading-relaxed">&ldquo;SC Home is the best. They have helped me with my own personal roofing issues and they always take great care of my clients. Top notch product and top notch customer service.&rdquo;</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-white ring-1 ring-slate-200" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Satisfied Customer</p>
+              <p class="text-sm text-slate-500">Shared on our Instagram</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-slate-700 text-[15px] leading-relaxed">&ldquo;SC Roofing did a total transformation of our home: New roof, new siding, new wrap-around porch, windows, and gutters. Not only were the workers always professional and polite, they respected our property and kept the grounds cleaned throughout this major renovation process. My husband and I recommend Sam and his team to ANYONE needing similar upgrades or whether you are building from the ground up. Sam&rsquo;s your man!!&rdquo;</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600 text-white font-headline font-semibold text-lg" aria-hidden="true">S</span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Sonya</p>
+              <p class="text-sm text-slate-500">Little Rock, Arkansas</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card snap-start shrink-0 w-[85%] sm:w-[46%] lg:w-[31%] bg-white rounded-sm shadow-md p-7 sm:p-8">
+          <p class="text-slate-700 text-[15px] leading-relaxed">&ldquo;SC did our siding, windows, shutters and gutters. They are a great group to deal with. Highly recommend.&rdquo;</p>
+          <div class="flex items-center gap-4 mt-7">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600 text-white font-headline font-semibold text-lg" aria-hidden="true">S</span>
+            <div>
+              <p class="font-bold text-slate-800 leading-tight">Starr</p>
+              <p class="text-sm text-slate-500">Little Rock, Arkansas</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS: dark panel, copy on the left, dotted map with city dots on the right.
+       Map = a zoomed window on Central Arkansas (lon -92.80..-91.50, lat 34.478..35.14; equirectangular with x scaled by
+       cos 34.8°, so X% = (lon + 92.80) / 1.3 * 100, Y% = (35.14 - lat) / 0.662 * 100). The dotted land is Pulaski, Saline,
+       Faulkner and Lonoke counties (us-atlas counties-10m, merged in the browser with topojson-client).
+       Little Rock dot = their office, 915 E 9th St, 72202 (about 34.741, -92.263). Their old website said "SC Home provides
+       services all over Central Arkansas" and quoted customers in Little Rock, Maumelle and Sherwood; Arkansas Business (2012)
+       placed them in Sherwood with plans for a Conway office. The other towns are the metro within a short drive. North
+       Little Rock sits right on top of the office dot, so it is named in the copy instead of getting its own dot.
+       CONFIRM the area with Sam. -->
+  <section id="areas" class="bg-slate-100 py-14 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-sm bg-brand-900 shadow-xl reveal">
+        <div class="grid gap-10 lg:grid-cols-2 lg:gap-6 items-center p-7 sm:p-12 lg:p-16">
+
+          <!-- Left: copy -->
+          <div class="relative z-10">
+            <h2 class="font-headline font-medium uppercase text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.02]">Roofing Central Arkansas</h2>
+            <p class="text-[#f5b3b0] font-semibold text-lg sm:text-xl leading-snug mt-6 max-w-lg">From our office on East 9th Street in Little&nbsp;Rock.</p>
+            <p class="text-white/75 text-sm sm:text-base leading-relaxed mt-5 max-w-lg">Roofing, windows and siding for homes all over Central Arkansas, from Little Rock and North Little Rock to Sherwood, Maumelle and Conway. Not sure we reach you? Call <span class="whitespace-nowrap">501-374-HOME</span> and&nbsp;ask.</p>
+            <a href="#contact" class="mt-8 inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-headline font-medium uppercase tracking-wide text-base px-6 py-3 rounded-sm transition-colors">
+              Get a Free Estimate
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: map. Dots are positioned in % of this box, so they stay put at every size. -->
+          <div class="relative w-full aspect-[1000/620] lg:scale-[1.12] lg:origin-center">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1000 620" aria-hidden="true">
+              <defs>
+                <pattern id="areaDots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#5e3b3c"/></pattern>
+                <clipPath id="areaClip">
+                  <!-- Pulaski + Saline + Faulkner + Lonoke counties (points outside the 1000x620 box are simply cut off) -->
+                  <path d="M188,25 216,24 229,-32 210,-46 218,-109 243,-132 246,-214 420,-210 530,-209 522,69 605,60 652,89 710,108 768,102 765,205 851,206 845,438 895,481 873,525 898,550 870,582 864,617 842,616 591,609 456,606 425,605 304,604 304,645 163,641 136,681 100,680 89,679 89,625 47,624 47,596 6,596 6,542 -5,514 -61,514 -58,473 -138,471 -130,345 -212,345 -210,264 -22,267 44,292 47,268 33,268 36,214 116,215 116,188 196,191 196,175 155,135 196,79 188,25Z"/>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#areaClip)"><rect width="1000" height="620" fill="url(#areaDots)"/></g>
+            </svg>
+
+            <!-- City dots: the city name shows on hover / keyboard focus. -->
+            <a href="#contact" class="area-dot group" style="left:41.3%;top:60.2%" aria-label="Little Rock, Arkansas"><span class="area-tip">Little Rock</span></a>
+            <a href="#contact" class="area-dot group" style="left:44.3%;top:49.1%" aria-label="Sherwood, Arkansas"><span class="area-tip">Sherwood</span></a>
+            <a href="#contact" class="area-dot group" style="left:30.5%;top:41.3%" aria-label="Maumelle, Arkansas"><span class="area-tip">Maumelle</span></a>
+            <a href="#contact" class="area-dot group" style="left:27.5%;top:7.7%" aria-label="Conway, Arkansas"><span class="area-tip">Conway</span></a>
+            <a href="#contact" class="area-dot group" style="left:53.1%;top:41.4%" aria-label="Jacksonville, Arkansas"><span class="area-tip">Jacksonville</span></a>
+            <a href="#contact" class="area-dot group" style="left:60.3%;top:25.0%" aria-label="Cabot, Arkansas"><span class="area-tip">Cabot</span></a>
+            <a href="#contact" class="area-dot group" style="left:23.9%;top:82.2%" aria-label="Bryant, Arkansas"><span class="area-tip">Bryant</span></a>
+            <a href="#contact" class="area-dot group" style="left:16.4%;top:86.9%" aria-label="Benton, Arkansas"><span class="area-tip">Benton</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FREE ESTIMATE: info cards on the left, estimate form on the right (structure from layout 1).
+       The form has no backend yet: point <form action> at the client's form handler (or Formspree etc.) and remove the demo script. -->
+  <section id="contact" class="bg-white py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14 items-start">
+
+      <!-- Left: info -->
+      <div class="lg:col-span-5 reveal">
+        <p class="text-brand-600 font-bold uppercase tracking-[0.14em] text-xs sm:text-sm">Get In Touch</p>
+        <h2 class="font-headline font-bold uppercase text-slate-800 text-4xl sm:text-5xl leading-[1.02] mt-3">Let&rsquo;s Make Your Home an SC&nbsp;Home</h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mt-5">A worn-out roof, a storm claim, tired siding or drafty windows: call or send the form for a free roof inspection and estimate, and we&rsquo;ll get back to you to set up a&nbsp;visit.</p>
+
+        <!-- Address and main line (501-374-HOME) from their Google listing and old website; second line 501-916-2163 from
+             their Instagram posts ("Give us a call today!!"). Google shows only "Opens 8 AM", so no hours card; no email card
+             either: myschome.com no longer loads, so its addresses (e.g. operationroof@myschome.com) may be dead. Instagram
+             card instead. CONFIRM a public email and opening hours. -->
+        <div class="mt-8 space-y-3">
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Our Office</p>
+              <p class="text-sm sm:text-base font-bold text-slate-800">915 E 9th St, Little Rock, AR&nbsp;72202</p>
+            </div>
+          </div>
+
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Office &middot; 501-374-HOME</p>
+              <a href="tel:5013744663" class="inline-block py-2 -my-2 text-base font-extrabold text-slate-800 hover:text-brand-600 transition-colors">(501) 374-4663</a>
+            </div>
+          </div>
+
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2"/><path d="M11 18h2"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Also Call</p>
+              <a href="tel:5019162163" class="inline-block py-2 -my-2 text-base font-extrabold text-slate-800 hover:text-brand-600 transition-colors">(501) 916-2163</a>
+            </div>
+          </div>
+
+          <div class="info-card flex items-center gap-4 rounded-md bg-slate-50 ring-1 ring-slate-200 p-4">
+            <span class="grid place-items-center shrink-0 w-12 h-12 rounded-full bg-brand-600/10 text-brand-600">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Instagram</p>
+              <a href="https://www.instagram.com/myschome/" target="_blank" rel="noopener" class="inline-block py-2 -my-2 text-sm sm:text-base font-bold text-slate-800 hover:text-brand-600 transition-colors break-all">@myschome</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form card -->
+      <div class="lg:col-span-7 reveal" style="--reveal-delay:100ms">
+        <div class="relative overflow-hidden rounded-md bg-white ring-1 ring-slate-200 shadow-xl p-7 sm:p-10">
+          <div class="absolute inset-x-0 top-0 h-1.5 bg-brand-600"></div>
+
+          <div class="mb-7">
+            <h3 class="font-headline font-semibold uppercase text-slate-800 text-3xl">Request a Free&nbsp;Estimate</h3>
+            <p class="text-sm text-slate-500 mt-1.5">Roofing &middot; Free Inspections &middot; Insurance Claims &middot; Siding &middot;&nbsp;Windows</p>
+          </div>
+
+          <form id="estimate-form" class="space-y-4" action="#" method="post">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="est-name" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Full Name *</label>
+                <input id="est-name" name="name" type="text" required autocomplete="name" placeholder="John Doe" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+              </div>
+              <div>
+                <label for="est-phone" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Phone Number *</label>
+                <input id="est-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(555) 000-0000" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+              </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="est-email" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Email Address *</label>
+                <input id="est-email" name="email" type="email" required autocomplete="email" placeholder="john@example.com" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+              </div>
+              <div>
+                <label for="est-service" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Service Needed *</label>
+                <select id="est-service" name="service" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+                  <option value="">Select a service</option>
+                  <option>Roof Replacement</option>
+                  <option>Roof Repair</option>
+                  <option>Free Roof Inspections</option>
+                  <option>Insurance Claims</option>
+                  <option>Siding</option>
+                  <option>Windows</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="est-address" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Property Address</label>
+              <input id="est-address" name="address" type="text" autocomplete="street-address" placeholder="123 Main St, City, ST" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition">
+            </div>
+
+            <div>
+              <label for="est-details" class="block text-xs font-bold uppercase tracking-wide text-slate-700 mb-1.5">Project Details</label>
+              <textarea id="est-details" name="details" rows="3" placeholder="Tell us a bit about your roof..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-md text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:border-brand-600 transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-headline font-medium uppercase tracking-wide text-lg py-3.5 rounded-md shadow-md transition-colors">
+              Get My Free Estimate
+            </button>
+            <p id="estimate-status" class="hidden rounded-md bg-brand-600/10 text-brand-700 text-sm font-semibold px-4 py-3" role="status">Thanks! Your request was received &mdash; we&rsquo;ll get back to you to set up your free inspection. Prefer to talk? Call 501-374-HOME.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER: standard roofing footer (top bar, 4 link columns, bottom bar). Only list services, areas and pages the client really has. -->
+  <footer class="relative bg-brand-950 text-white/60 text-sm">
+    <!-- Roof peak rising into the section above -->
+    <div class="roof-peak-up" aria-hidden="true"></div>
+
+    <!-- Top bar: brand, phone, CTA -->
+    <div class="border-b border-brand-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-5">
+        <a href="#top" class="flex items-center gap-3">
+          <!-- {{LOGO}}: their house mark (see header); its white gables and maroon roofs read fine on the dark footer -->
+          <img src="images/logo-mark.png" alt="" class="h-10 w-auto shrink-0" width="396" height="115">
+          <span class="leading-none">
+            <span class="block font-display font-extrabold text-xl sm:text-2xl tracking-tight text-white"><span class="text-brand-500">SC</span> Home</span>
+            <span class="block text-[9px] tracking-[0.18em] uppercase text-white/50 mt-1">Roofing &middot; Windows &middot; Siding</span>
+          </span>
+        </a>
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+          <a href="tel:5013744663" class="font-extrabold text-xl text-white hover:text-brand-500 transition-colors">(501) 374-4663</a>
+          <a href="#contact" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-3 rounded-md transition-colors text-xs uppercase tracking-wider shadow-md">Get a Free Estimate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-2 md:grid-cols-4 gap-10" data-stagger>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Services</h4>
+        <ul class="space-y-2.5">
+          <!-- one <li> per real service -->
+          <li><a href="#services" class="hover:text-white transition-colors">Roof Replacement</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Roof Repair</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Free Roof Inspections</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Insurance Claims</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Siding</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Windows</a></li>
+        </ul>
+      </div>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Service Areas</h4>
+        <ul class="space-y-2.5">
+          <!-- one <li> per real area (same towns as the map and copy; CONFIRM) -->
+          <li><a href="#areas" class="hover:text-white transition-colors">Little Rock</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">North Little Rock</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Sherwood</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Maumelle</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Conway</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Benton</a></li>
+        </ul>
+      </div>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Company</h4>
+        <ul class="space-y-2.5">
+          <!-- mirror the site's real sections only -->
+          <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+          <li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li>
+          <li><a href="#areas" class="hover:text-white transition-colors">Service Area</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="reveal-fade">
+        <h4 class="font-headline font-medium text-white uppercase mb-4 text-base tracking-wider">Contact</h4>
+        <p class="leading-relaxed mb-3">915 E 9th St<br>Little Rock, AR 72202</p>
+        <a href="tel:5013744663" class="block hover:text-white transition-colors">(501) 374-4663</a>
+        <a href="tel:5019162163" class="block mt-1 hover:text-white transition-colors">(501) 916-2163</a>
+        <a href="https://www.instagram.com/myschome/" target="_blank" rel="noopener" class="block mt-1 hover:text-white transition-colors">Follow us on Instagram</a>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-brand-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/45 text-center sm:text-left">
+        <span>&copy; 2026 SC Home. All rights reserved.</span>
+        <span>SC stands for Satisfied Customer &middot; Little Rock,&nbsp;Arkansas</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* ===== Motion & interaction layer (client-specific; layout, spacing and type untouched) ===== */
+    /* Anchor links glide, and stop below the 80px sticky header instead of under it */
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    :focus-visible { outline: 2px solid #a32326; outline-offset: 3px; }
+
+    /* Scroll reveal: content eases up/in once as it enters the viewport (hidden only while JS runs) */
+    .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.16,.8,.3,1), transform .7s cubic-bezier(.16,.8,.3,1); transition-delay: var(--reveal-delay, 0ms); }
+    /* Opacity-only for the services circle/tiles: the curved-cutout script measures live positions */
+    .js .reveal-fade { opacity: 0; transition: opacity .7s ease-out; transition-delay: var(--reveal-delay, 0ms); }
+    .js .reveal.is-visible, .js .reveal-fade.is-visible { opacity: 1; transform: none; }
+
+    /* Hero: photo settles from a slight zoom, copy lines rise in one after another */
+    .hero-img { animation: hero-zoom 1.8s cubic-bezier(.2,.7,.2,1) both; }
+    .hero-in > * { animation: rise-in .8s cubic-bezier(.16,.8,.3,1) both; }
+    .hero-in > :nth-child(2) { animation-delay: .12s; }
+    .hero-in > :nth-child(3) { animation-delay: .24s; }
+    @keyframes hero-zoom { from { transform: scale(1.07); } to { transform: scale(1); } }
+    @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+    /* Header deepens its shadow once the page scrolls */
+    #site-header { transition: box-shadow .3s ease; }
+    #site-header.is-scrolled { box-shadow: 0 8px 24px -12px rgba(24,11,12,.35); }
+
+    /* Desktop nav: underline slides in under the hovered link */
+    header nav > a, header nav > .group > button { position: relative; }
+    header nav > a::after, header nav > .group > button::after { content: ""; position: absolute; left: 0; right: 0; bottom: 16px; height: 2px; background: #a32326; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+    header nav > a:hover::after, header nav > .group:hover > button::after, header nav > .group:focus-within > button::after { transform: scaleX(1); }
+    /* Dropdowns drop in slightly instead of just appearing */
+    header nav .group > div { transform: translateY(6px); transition: opacity .2s ease, transform .2s ease, visibility .2s; }
+    header nav .group:hover > div, header nav .group:focus-within > div { transform: none; }
+
+    /* Mobile drawer: slides open/closed instead of snapping */
+    @media (max-width: 1023.98px) {
+      #mobile-menu { display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden; border-top-width: 0; transition: grid-template-rows .32s ease, opacity .25s ease, visibility .32s; }
+      #mobile-menu.is-open { grid-template-rows: 1fr; opacity: 1; visibility: visible; border-top-width: 1px; }
+      /* the inner list's own py-3 padding would otherwise leave a 24px strip when "closed" */
+      .mobile-menu-inner { min-height: 0; overflow: hidden; padding-top: 0; padding-bottom: 0; transition: padding .32s ease; }
+      #mobile-menu.is-open .mobile-menu-inner { max-height: calc(100vh - 92px); max-height: calc(100dvh - 92px); overflow-y: auto; overscroll-behavior: contain; padding-top: .75rem; padding-bottom: .75rem; }
+    }
+    .menu-btn .bar { transform-box: fill-box; transform-origin: center; transition: transform .3s ease, opacity .2s ease; }
+    .menu-btn[aria-expanded="true"] .bar-1 { transform: translateY(5px) rotate(45deg); }
+    .menu-btn[aria-expanded="true"] .bar-2 { opacity: 0; }
+    .menu-btn[aria-expanded="true"] .bar-3 { transform: translateY(-5px) rotate(-45deg); }
+
+    /* Buttons: every solid brand button gets a small lift + press */
+    a.bg-brand-600, button.bg-brand-600 { transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+    a.bg-brand-600:active, button.bg-brand-600:active { transform: translateY(0) scale(.98); }
+    .btn-arrow svg, a[href^="tel:"] > svg:last-child, a.bg-brand-600 > svg:last-child { transition: transform .2s ease; }
+
+    /* Review arrows: dim at the start/end of the row */
+    #reviews-prev:disabled, #reviews-next:disabled { opacity: .4; pointer-events: none; }
+    /* Client tweak (from HV Roofing): only 1 card, so hide the arrows when neither can scroll */
+    div:has(> #reviews-prev:disabled + #reviews-next:disabled) { display: none !important; }
+
+    /* Form: success message fades in, button shows a sending state */
+    #estimate-status:not(.hidden) { animation: rise-in .45s ease both; }
+    #estimate-form button[type="submit"][aria-busy="true"] { opacity: .75; cursor: progress; }
+
+    /* Footer links nudge right; a little invisible padding makes them easier to tap without moving anything */
+    footer ul a { display: inline-block; padding: 3px 0; margin: -3px 0; transition: color .2s ease, transform .2s ease; }
+    footer .md\:grid-cols-4 > div:last-child > a { padding: 3px 0; margin: -3px 0; }
+    /* Contact cards: phone and email links get a taller tap area without moving anything */
+    .info-card a[href^="tel:"], .info-card a[href^="mailto:"] { display: inline-block; padding: 8px 0; margin: -8px 0; }
+    /* ...but the email keeps the template's truncate on narrow phones (inline-block needs a max-width for the ellipsis to apply) */
+    .info-card a[href^="mailto:"] { max-width: 100%; vertical-align: top; }
+    /* Reviews: the "Leave a Google Review" link gets a taller tap area without moving anything */
+    #reviews a[href^="https:"] { display: inline-block; padding: 9px 0; margin: -9px 0; }
+    /* About: the phone link next to the button gets the same taller tap area */
+    #about a[href^="tel:"] { padding: 10px 0; margin: -10px 0; }
+    /* Map dots: bigger invisible hit area for fingers (the visible dot stays 14px) */
+    .area-dot::before { content: ""; position: absolute; inset: -12px; border-radius: 9999px; }
+    /* Phones and every touch screen (landscape phones and iPads are 640px+): 16px form text stops iOS Safari zooming the page when a field is tapped */
+    @media (max-width: 639.98px), (pointer: coarse) { #estimate-form input, #estimate-form select, #estimate-form textarea { font-size: 16px; } }
+    /* Touch screens: footer links and phone numbers get ~30px hit areas (rows sit 30px apart, so the areas meet without overlapping); header phone gets a taller tap zone */
+    @media (pointer: coarse) {
+      footer ul a, footer .md\:grid-cols-4 > div:last-child > a { padding: 5px 0; margin: -5px 0; }
+      footer a[href^="tel:"].text-xl { display: inline-block; padding: 8px 0; margin: -8px 0; }
+      header a[href^="tel:"].md\:block { padding: 10px 0; margin: -10px 0; }
+    }
+    /* Landscape phones (short screens, 640px+ wide): a little more room under the hero copy so the slide dots never touch the paragraph */
+    @media (min-width: 640px) and (max-height: 500px) { .cut-hero > div.max-w-7xl { padding-bottom: 7.5rem; } }
+    /* Phones: the map is small and the dots sit close together, so the dots shrink a little to stay apart */
+    @media (max-width: 639.98px) { a.area-dot { width: 10px; height: 10px; margin: -5px 0 0 -5px; box-shadow: 0 0 0 3px rgba(239,107,110,.28); } a.area-dot::before { inset: -15px; } }
+
+    /* Hover-only effects: skipped on touch screens so nothing "sticks" after a tap */
+    @media (hover: hover) {
+      a.bg-brand-600:hover, button.bg-brand-600:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -10px rgba(163,35,38,.45); }
+      .btn-arrow:hover svg, a[href^="tel:"]:hover > svg:last-child, a.bg-brand-600:hover > svg:last-child { transform: translateX(3px); }
+      .stat-tile { transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease; }
+      .stat-tile:hover { transform: translateY(-3px); background: #fff; box-shadow: 0 12px 24px -14px rgba(24,11,12,.35); }
+      .stat-tile svg { transition: transform .3s ease; }
+      .stat-tile:hover svg { transform: scale(1.15); }
+      .review-card { transition: transform .25s ease, box-shadow .25s ease; }
+      .review-card:hover { transform: translateY(-4px); box-shadow: 0 18px 32px -16px rgba(24,11,12,.35); }
+      .info-card { transition: box-shadow .2s ease, background-color .2s ease; }
+      .info-card:hover { background: #fff; box-shadow: 0 0 0 1px #a32326, 0 10px 22px -14px rgba(24,11,12,.4); }
+      .info-card > span { transition: background-color .2s ease, color .2s ease; }
+      .info-card:hover > span { background: #a32326; color: #fff; }
+      .photo-hover > img { transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+      .photo-hover:hover > img { transform: scale(1.02); }
+      footer ul a:hover { transform: translateX(3px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal, .js .reveal-fade { opacity: 1; transform: none; transition: none; }
+      .hero-img, .hero-in > *, #estimate-status:not(.hidden) { animation: none; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+
+    /* Footer roof peak: the dark footer rises into the section above */
+    .roof-peak-up { position: absolute; left: 50%; bottom: 100%; width: 14rem; height: 2.25rem; transform: translateX(-50%); background: #180b0c; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+    @media (max-width: 640px) { .roof-peak-up { width: 9rem; height: 1.5rem; } }
+    /* Service-area map dots */
+    .area-dot { position: absolute; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 9999px; background: #ef6b6e; box-shadow: 0 0 0 4px rgba(239,107,110,.28); }
+    .area-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 9999px; border: 2px solid #ef6b6e; opacity: 0; animation: area-pulse 2.6s ease-out infinite; }
+    .area-dot:hover, .area-dot:focus-visible { background: #fbd0d1; outline: none; z-index: 2; }
+    .area-tip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); background: #fff; color: #2c1617; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; box-shadow: 0 6px 16px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .15s; }
+    .area-dot:hover .area-tip, .area-dot:focus-visible .area-tip { opacity: 1; }
+    @keyframes area-pulse { 0% { transform: scale(.6); opacity: .8; } 100% { transform: scale(2.2); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .area-dot::after { animation: none; } }
+    /* Reviews track: line up with the page container on the left, run off the right edge, hide the scrollbar */
+    .reviews-track { padding-left: max(1rem, calc((100% - 72rem) / 2 + 2rem)); padding-right: 1rem; scroll-padding-left: max(1rem, calc((100% - 72rem) / 2 + 2rem)); scrollbar-width: none; }
+    .reviews-track::-webkit-scrollbar { display: none; }
+    /* Services tiles 2 and 3: curved cutout that follows the round collage (--cx/--cy/--cr are set by script) */
+    @media (min-width: 1024px) {
+      .cut-svc {
+        -webkit-mask-image: radial-gradient(circle at var(--cx, 100%) var(--cy, 0), transparent var(--cr, 0px), #000 calc(var(--cr, 0px) + 0.6px));
+        mask-image: radial-gradient(circle at var(--cx, 100%) var(--cy, 0), transparent var(--cr, 0px), #000 calc(var(--cr, 0px) + 0.6px));
+      }
+    }
+    /* Roof-pitch cuts: diagonal corners on photos + hero, and a peak notch between sections */
+    .cut-tl { clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 22%); }
+    .cut-tr { clip-path: polygon(0 0, 86% 0, 100% 22%, 100% 100%, 0 100%); }
+    .cut-hero { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3rem), calc(100% - 7rem) 100%, 0 100%); }
+    .roof-peak { position: absolute; left: 50%; bottom: 0; width: 14rem; height: 2.25rem; transform: translateX(-50%); background: #fff; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+    @media (max-width: 640px) { .cut-hero { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), calc(100% - 4rem) 100%, 0 100%); } .roof-peak { width: 9rem; height: 1.5rem; } }
+    .marquee-track { animation: marquee-rtl 30s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee-rtl { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-edge {
+      position: absolute; top: 0; bottom: 0; width: 7rem; pointer-events: none; z-index: 1;
+      -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    }
+    /* Text stand-ins; replace each <li> with an <img> of the brand's logo (grayscale, ~h-10) */
+    .brand-logo { font-family: 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 1.75rem; color: #94a3b8; white-space: nowrap; }
+    @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+  </style>
+
+  <script>
+    // Services circle: the 4 photo segments crossfade through this pool (list them in segment order).
+    // Add or remove any number of the client's photos (5 or more, or the circle stays still) — the circle never depends on how many services there are.
+    const CIRCLE_PHOTOS = [
+      'images/circle-1.jpg',
+      'images/circle-2.jpg',
+      'images/circle-3.jpg',
+      'images/circle-4.jpg',
+      'images/circle-5.jpg',
+      'images/circle-float.jpg',
+      'images/tile-windows.jpg'
+    ];
+    (function () {
+      const segs = [...document.querySelectorAll('.circle-seg')];
+      const n = CIRCLE_PHOTOS.length;
+      if (segs.length === 0 || n <= segs.length) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const layers = segs.map(s => [...s.querySelectorAll('img')]);
+      const front = segs.map(() => 0);   // which of the 2 stacked <img> is currently visible
+      let t = 0;
+      setInterval(() => {
+        t++;
+        segs.forEach((_, k) => setTimeout(() => {
+          const [a, b] = [layers[k][front[k]], layers[k][1 - front[k]]];
+          const next = new Image();
+          next.onload = () => {
+            b.src = next.src;
+            b.classList.remove('opacity-0'); b.style.transition = 'opacity 1s'; b.style.opacity = 1;
+            a.style.transition = 'opacity 1s'; a.style.opacity = 0;
+            front[k] = 1 - front[k];
+          };
+          next.src = CIRCLE_PHOTOS[(t + k) % n];
+        }, k * 500));
+      }, 4500);
+    })();
+
+    // Services tiles 2 and 3: cut a curve out of each tile's edge that follows the round collage,
+    // so the shape stays matched whatever the paragraph length or screen width.
+    (function () {
+      const tiles = [...document.querySelectorAll('.cut-svc')];
+      const circle = document.getElementById('svc-circle');
+      const GAP = 16; // space between the circle and the tiles
+      if (!tiles.length || !circle) return;
+      function fit() {
+        if (!window.matchMedia('(min-width: 1024px)').matches) {
+          tiles.forEach(tile => ['--cx', '--cy', '--cr'].forEach(v => tile.style.removeProperty(v)));
+          return;
+        }
+        const c = circle.getBoundingClientRect();
+        tiles.forEach(tile => {
+          const t = tile.getBoundingClientRect();
+          tile.style.setProperty('--cx', (c.left + c.width / 2 - t.left) + 'px');
+          tile.style.setProperty('--cy', (c.top + c.height / 2 - t.top) + 'px');
+          tile.style.setProperty('--cr', (c.width / 2 + GAP) + 'px');
+        });
+      }
+      fit();
+      window.addEventListener('resize', fit);
+      window.addEventListener('load', fit);
+      if (window.ResizeObserver) {
+        // tiles shrink/grow when the paragraph changes length, so watch them as well as the circle and section
+        const ro = new ResizeObserver(fit);
+        [...tiles, circle, document.getElementById('services')].forEach(el => ro.observe(el));
+      }
+    })();
+
+    // Reviews: arrow buttons scroll the row by one card
+    (function () {
+      const track = document.getElementById('reviews-track');
+      if (!track) return;
+      const step = dir => {
+        const card = track.querySelector('article');
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        track.scrollBy({ left: dir * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+      };
+      const prev = document.getElementById('reviews-prev');
+      const next = document.getElementById('reviews-next');
+      prev.addEventListener('click', () => step(-1));
+      next.addEventListener('click', () => step(1));
+      // Dim an arrow when there's nothing further to scroll in that direction
+      const sync = () => {
+        const max = track.scrollWidth - track.clientWidth - 2;
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= max;
+        // with only a couple of reviews every card fits on wider screens; hide the arrows rather than show two dead buttons
+        prev.parentElement.style.visibility = max <= 0 ? 'hidden' : '';
+      };
+      track.addEventListener('scroll', sync, { passive: true });
+      window.addEventListener('resize', sync);
+      sync();
+    })();
+
+    // Service tiles: jump to the estimate form with that service already selected
+    (function () {
+      const select = document.getElementById('est-service');
+      document.querySelectorAll('.svc-tile').forEach(tile => {
+        tile.addEventListener('click', () => {
+          const name = tile.querySelector('h3').textContent.trim();
+          const opt = [...select.options].find(o => o.textContent.trim() === name);
+          if (opt) select.value = opt.value || opt.textContent;
+        });
+      });
+    })();
+
+    // Estimate form: DEMO ONLY. Shows the success message; replace with a real submit (form action / fetch to the client's handler).
+    (function () {
+      const form = document.getElementById('estimate-form');
+      const status = document.getElementById('estimate-status');
+      if (!form) return;
+      const submit = form.querySelector('button[type="submit"]');
+      const label = submit.textContent;
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        submit.setAttribute('aria-busy', 'true');
+        submit.disabled = true;
+        submit.textContent = 'Sending…';
+        setTimeout(() => {
+          submit.removeAttribute('aria-busy');
+          submit.disabled = false;
+          submit.textContent = label;
+          status.classList.remove('hidden');
+          form.reset();
+        }, 700);
+      });
+    })();
+
+    // Reveal-on-scroll: fades/slides .reveal / .reveal-fade elements in once as they enter the viewport.
+    // Children of a [data-stagger] container come in one after another.
+    (function () {
+      document.querySelectorAll('[data-stagger]').forEach(group => {
+        [...group.children].filter(c => c.matches('.reveal, .reveal-fade'))
+          .forEach((c, i) => c.style.setProperty('--reveal-delay', (i * 90) + 'ms'));
+      });
+      // Service tiles stagger in the order they appear
+      document.querySelectorAll('.svc-tile').forEach((t, i) => t.style.setProperty('--reveal-delay', (i * 80) + 'ms'));
+      const els = [...document.querySelectorAll('.reveal, .reveal-fade')];
+      if (!('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('is-visible')); return; }
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // Header: stronger shadow once the page has scrolled
+    (function () {
+      const header = document.getElementById('site-header');
+      const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    // Mobile menu: animated open/close; closes on link tap, Escape, outside tap, or when resizing up to desktop
+    (function () {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const setOpen = open => {
+        menu.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', open);
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      };
+      btn.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
+      // Collapsing the menu mid-scroll cancels the browser's own anchor jump, so close first, then scroll ourselves
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', e => {
+        const hash = a.getAttribute('href');
+        const target = hash && hash.startsWith('#') && hash.length > 1 && document.querySelector(hash);
+        setOpen(false);
+        if (!target) return;
+        e.preventDefault();
+        // wait for the drawer to finish collapsing, otherwise the page shifts up under the scroll and overshoots
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+          history.pushState(null, '', hash);
+        }, 340);
+      }));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+      document.addEventListener('click', e => { if (menu.classList.contains('is-open') && !e.target.closest('#site-header')) setOpen(false); });
+      window.matchMedia('(min-width: 1024px)').addEventListener('change', e => { if (e.matches) setOpen(false); });
+    })();
+  </script>
+</body>
+</html>
